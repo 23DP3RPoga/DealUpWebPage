@@ -5,11 +5,15 @@
   }
   
   html, body {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     font-family: Arial, sans-serif;
   }
 
   .Body{
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 200px;
     grid-template-rows: repeat(8, 1fr);
@@ -29,13 +33,13 @@
 
   #Hero {
     display: grid;
+    padding-top: 100px;
+    padding-bottom: 100px;
     grid-template-areas:
-    "header img"
-    "quote img"
-    "learn img";
+    "header img";
     gap: 5px;
     background: #77F893;
-
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(82, 170, 101, 1));
   }
 
   #Hero > div {
@@ -43,10 +47,16 @@
   }
 
   #Hero > div#Heading {
+    font-size: 26px;
+    text-align: left;
     grid-area: header;
     display: flex;
     justify-content: center;
     align-items:flex-end;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   #Hero > div#Quote {
@@ -54,27 +64,50 @@
     display: flex;
     justify-content: center;
     align-items:flex-end;
+    text-align: left;
   }
   
-  #Hero > div#Learn {
+  #Hero > div#Lern {
     grid-area: learn;
     display: flex;
     justify-content: center;
+    text-align: left;
+
   }
+
+  .Lern {
+    border-radius: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Inknut Antiqua";
+    font-size: 20px;
+    cursor: pointer;
+    background-image: rgb(rgb(255, 255, 255));
+    white-space: nowrap;
+    margin: 0;
+    border: 0;
+  }
+
+  .Lern:hover {
+    background-color: #2BB549;
+    color: #fff;
+    
+  }
+
+
 
   #Hero > div#HeroIMG {
     grid-area: img;
-  }
-  
-  #section2 {
-    grid-row: 2;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
   }
 
+.section{
+  background-color: #fff;
+}
 .footer{
   grid-row: 8;
   background-color: #7AFCB4;

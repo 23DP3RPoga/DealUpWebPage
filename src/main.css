@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
 @media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
   html, body {
     margin: 0;
@@ -21,62 +28,51 @@
   }
 
   .header {
-    height: 17vh;
+    height: 18vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
     grid-row: 1;
-      justify-content: center;
-  align-items:flex-end;
-  flex-direction: column;
+    justify-content: center;
+    align-items: center;
   } 
 
   #logo{
     align-items: center;
-  grid-column-start: 1;
-  grid-column-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
     img{
-      width: 150;
-      height: 150;
+      width: 150px;
+      height: 150px;
     }  
-    button{
-      width: 114;
-      height: 30;
-    }
-  
-    
   }
+
   #NavButtons{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    column-width: 200vh;
-    padding-left: 44vh; 
-    padding-top: 5vh; 
+    /* column-width: 200vh; */
+    /* padding-left: 44vh;  */
+    /* white-space: nowrap;  */
+    button{
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    #home{
+      background-color: #2BB549;
+    }
   }
+
   nav {
     display: flex;
     justify-content: center;
     padding: 1rem;
     gap: 1.5rem;
-    button{
-      padding-top: ;
-      border: none;
-    }
   }
-
-  #home{
-    background-color: #2BB549;
-  }
-
-
-
 
 
   #Hero {
-    height: 100vh;
+    height: 80vh;
     grid-row: 2;
     display: grid;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     grid-template-areas:
     "header img";
     gap: 5px;
@@ -353,18 +349,24 @@ html, body {
   grid-template-rows: repeat(8, 1fr);
 }
 
-.header {
-
-  display: grid;
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-row: 1;
     justify-content: center;
   align-items:flex-end;
-  flex-direction: column;
+  flex-direction: column; */
   } 
 #logo{
 grid-column-start: 1;
-grid-column-end: 1;  
+grid-column-end: 1;
+img{
+  width: 100px;
+  height: 100px;
+}  
 
 
 }
@@ -409,7 +411,7 @@ nav {
 
 #HeroIMG{
 img{
-  width: 300px;
+  width: 280px;
   background-color: ;
 }
 }
@@ -582,12 +584,17 @@ background-image: linear-gradient(to right,#79FCB4 40%,#37654C 100%);
 height: ;
 }
 #download{
+align-items: center;
 grid-row: 7;
 grid-template-areas: 
 "text b1 b2";
 display: grid;
 background-color: #ffffff;
-height: ;
+height:200px ;
+button{
+  white-space: nowrap;
+
+}
 
 }
 #download > div#text {
@@ -629,6 +636,7 @@ padding-top: 40px;
 
 }
 #b2{
+padding-left: 10px;
 padding-top: 40px;
 
 
@@ -647,11 +655,20 @@ background-color: #000000;
 color: #ffffff;
 }
 
-
+#text{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-left: 10px;
+  h1{
+    font-size: 30px;
+  }
+}
 #learnbutton{
 height: 5.6svb;;
-width: ;
+padding:  ;
 border: none;
+border-radius: 8px;
 }
 }
 

@@ -252,6 +252,7 @@
 }
 #download > div#text {
   grid-area: text;
+  width: 50vw;
 }
 div#text {
   display: flex;
@@ -264,10 +265,10 @@ div#text {
 #download > div#b1 {
   grid-area: b1;
 }
-#download > div#b1 > #b11 {
+#download > div#b1 > #downloadbutton {
   grid-area: b1;
   display: flex;
-  justify-content: right; 
+  justify-content: center; 
   align-items: center;
   border: 0;
   border-radius: 5px;
@@ -275,6 +276,17 @@ div#text {
 }
 #download > div#b2 {
   grid-area: b2;
+  padding-left: 30%;
+}
+#download > div#b2 > #learnbutton{
+  grid-area: b2;
+  display: flex;
+
+  justify-content: center; 
+  align-items: center;
+  border: 0;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 
@@ -314,7 +326,7 @@ div#text {
 }
 }
 
-
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 480px) {
 html, body {
   margin: 0;

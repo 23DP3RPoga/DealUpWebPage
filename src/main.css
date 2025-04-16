@@ -29,11 +29,21 @@
   align-items:flex-end;
   flex-direction: column;
   } 
-  #logo{
-  grid-column-start: 1;
-  grid-column-end: 1;  
-  
 
+  #logo{
+    align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 1;
+    img{
+      width: 150;
+      height: 150;
+    }  
+    button{
+      width: 114;
+      height: 30;
+    }
+  
+    
   }
   #NavButtons{
     grid-column-start: 2;
@@ -620,6 +630,7 @@ padding-top: 40px;
 }
 #b2{
 padding-top: 40px;
+
 
 }
 #downloadbutton{

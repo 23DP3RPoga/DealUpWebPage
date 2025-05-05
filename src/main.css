@@ -190,10 +190,7 @@ header {
   #mainJourney > div#Heading {
     grid-area: Heading;
     font-size: 170%;
-    text-align: bottom;
-    display: flex;
-    justify-content: center;
-    
+    padding-left: 10%;
   } 
 
   #mainJourney > div#line {
@@ -263,15 +260,87 @@ header {
 }
 #guide{
   grid-row: 5;
-  background-color: #7AFCB4;
-  height: 136vh;
+
   background-color: #FFF;
+
+  table{
+    
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(65, 199, 116), white);
+    th {
+      /* border:#000000 1px solid; */
+    };
+    #Name {
+      padding: 0;
+      width: 0vw;
+    }
+    img {
+      height: 400px;
+      padding: 4%;
+    }
+    #User{
+      color: #203b2c;
+      height: 10vh;
+      font-size: 130%;
+      padding: 0;
+      padding-left: 10%;
+      padding-top: 4%;
+      justify-content: left;
+      align-items: left;
+    }
+    #link{
+      font-size: 130%;
+      padding-left: 10%;
+      justify-content: left;
+      button {
+        font-size: 160%;
+        border: 0;
+        padding: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+
+      Button:hover {
+      background-color: #2BB549;
+      color: #fff;
+      }
+    }
+  }
 }
 #reviews{
   grid-row: 6;
   background-image: linear-gradient(to right,#79FCB4 40%,#37654C 100%);
-  height: 45vh;
+  h1 {
+    font-size: 44px;
+  }
+  #reviewHead {
+    height: 45vh;
+    padding: 4%;
+
+  }
+  #inline1 {
+    width: 26%;
+    height: 20vh;
+    background-color: aliceblue;
+    display: inline-block;
+
+    margin: 10px;
+    padding: 3%;
+    border-radius: 10px;
+    table {
+      width: 100%;
+      tr {
+        padding: 2%;
+      }
+    }
+  }
 }
+
+
 #download{
   grid-row: 7;
   grid-template-areas: 

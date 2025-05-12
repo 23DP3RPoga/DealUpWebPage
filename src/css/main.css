@@ -207,6 +207,13 @@ header {
     "button button image";
     gap: 5px;
     background: #ffffff;
+
+    #button {
+      
+      a {
+        width: 90%;
+      }
+    }
   }
 
   #mainJourney > div {
